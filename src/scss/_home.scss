@@ -1,0 +1,166 @@
+// featured section start
+.featured-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .featured-heading{
+        text-align: right;
+        color: $primary-color;
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 2.2em;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+    .slides{
+        .slide{
+            .featured{
+
+            }
+        }
+    }
+    .tns-outer{
+        position: relative;
+        .tns-controls{
+                position: absolute;
+                z-index: 3;
+                transform: translate(-50% ,-50%);
+                top: 50%;
+                width: calc(100% + 121px);
+                display: flex;
+                justify-content: space-between;
+                left: 50%;
+            button{
+                background: none;
+                border: none;
+                box-shadow: none;
+                outline: none;
+                i{
+                    color: $primary-color;
+                    font-size: 2em;
+                    display: none;
+                    @media (min-width: 992px){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .featured-btn-container{
+            text-align: right;
+            width: 100%;
+            margin-top: 44px;
+        .featured-btn{
+            text-decoration: none;
+            text-align: center;
+            color: #610f02;
+            background-color: $secondary-color;
+            font-size: 1.2em;
+            padding: 6px 29px;
+            display: inline-block;
+            font-family: $primary-font;
+            font-weight: 700;
+            border-radius: 37px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: #f9b64d;           
+            }
+        }
+    }
+}
+
+// success-story-section
+.success-story-section{
+    margin-bottom: 100px;
+    .success-story-heading{
+        text-align: center;
+        color: $primary-color;
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 2.5em;
+    }
+    .success-story-heading-text{
+        margin-top: 25px;
+        margin-bottom: 50px;
+        text-align: center;
+        color: #000000;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+    .blog-text{
+        .blog-link{
+            text-decoration: none;
+            .card{
+                transition: all ease-in-out 0.3s;
+                border: none;
+                .card-img-top{
+
+                }
+                .card-body{
+                    .card-heading-text{
+                       text-align: center;
+                       font-family: $primary-font;
+                       font-weight: 400;
+                       font-size: 1.6em; 
+                       color: $primary-color;
+                    }
+                    .card-date{
+                        text-align: center;
+                        font-family: $primary-font;
+                        font-weight: 400;
+                        font-size: 1.1em; 
+                        color: rgb(51, 50, 50);
+                    }
+                    .card-text{
+                        text-align: left;
+                        font-family: $primary-font;
+                        font-weight: 400;
+                        font-size: 1em; 
+                        color: #000000;
+                    }
+                    .author-name{
+                        text-align: right;
+                        font-family: $primary-font;
+                        font-weight: 400;
+                        font-size: 1.1em; 
+                        color: #171717;
+                    }
+                }
+                &:hover {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+    .blog-btn-container{
+            text-align: center;
+            width: 100%;
+            margin-top: 44px;
+        .blog-btn{
+            text-decoration: none;
+            text-align: center;
+            color: #610f02;
+            background-color: $secondary-color;
+            font-size: 1.5em;
+            padding: 6px 29px;
+            display: inline-block;
+            font-family: $primary-font;
+            font-weight: 700;
+            border-radius: 37px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: #f9b64d;  
+            }
+        }
+    }
+    .line-btn{
+        margin-top: 40px;
+        .line{
+            border: 1px solid $primary-color;
+            font-weight: 400;
+            font-family: $primary-font;
+            float: left;
+            width: 100%;
+        }
+    }
+}

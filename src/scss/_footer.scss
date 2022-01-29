@@ -1,0 +1,88 @@
+
+// Footer-section
+.footer-sec {
+    background: linear-gradient(to right, rgba(8,8,8,1) 0%,rgba(53,53,53,1) 40%,rgba(53,53,53,1) 50%,rgba(8,8,8,1) 100%);
+    @media (min-width: 768px){
+        background: linear-gradient(to right, rgba(8,8,8,1) 0%,rgba(53,53,53,1) 30%,rgba(53,53,53,1) 60%,rgba(8,8,8,1) 100%);
+    }
+    
+    .widget-container {
+        .widget-heading {
+            margin-top: 33px;
+            color: $secondary-color;
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 1.2em;
+            text-align: center;
+            @media (min-width: 768px) {
+                text-align: left;
+                // font-size: 2em;
+                margin-top: 0;
+                font-size: 1.3em;
+            }
+        }
+        .widget-content {
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                font-family: $primary-font;
+                font-weight: 400;
+                text-align: center;
+                transition: opacity 0.02s ease-in;
+
+                &:hover {
+                    opacity: 58%;
+                }
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            @media (min-width: 768px) {
+                text-align: left;
+            }
+            li {
+                list-style-type: none;
+                padding-top: 11px;
+                a {
+                    text-decoration: none;
+                    color: #fffefe;
+                    font-family: $primary-font;
+                    font-size: 1em;
+                    padding-top: 13px;
+                    text-align: center;
+                    @media (min-width: 768px){
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+/* copyright css */
+.copy-right {
+    background: linear-gradient(135deg, rgba(234,143,42,1) 0%,rgba(244,170,52,1) 28%,rgba(244,169,51,1) 70%,rgba(234,143,42,1) 100%);
+    .copyright-text {
+        color: #030303;
+        text-align: center;
+        font-size: 0.9em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: $primary-font;
+        font-weight: 400;
+        margin: 0;
+        @media (min-width: 768px){
+            font-size: 1.3em;
+        }
+        a {
+            color: #030303;
+            font-weight: 400;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+//end Footer-section
