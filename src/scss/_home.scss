@@ -1,3 +1,197 @@
+// Music section start
+.music-section{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    .music-heading{
+        font-family: $secondary-font;
+        font-weight: 700;
+        color: $primary-color;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .music-heading-text{
+        font-family: $secondary-font;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+        font-size: 1.3em;
+        padding-bottom: 20px;
+    }
+    .osuno-img-container{
+        .osuno-image-main{
+            position: relative;
+            .icon-sec{
+                a{
+                    i{
+                        color: #f0eeeb;
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-size: 7.3em;
+                        opacity: 0.8;
+                    }
+                }
+            } 
+        }
+        .osuno-music-text{
+            padding-top: 10px;
+            font-family: $secondary-font;
+            font-weight: 400;
+            color: #000000;
+            font-size: 1.2em;
+        }
+    }
+   
+    .music-sec{
+        .img-container{
+            .image-main{
+                position: relative;
+                .icon-sec{
+                    a{
+                        i{
+                            color: #f0eeeb;
+                            position: absolute;
+                            top:50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            font-size: 5em;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+            .osuno-music-text{
+                padding-top: 10px;
+                font-family: $secondary-font;
+                font-weight: 400;
+                color: #000000;
+                font-size: 1.1em;
+                margin: 0;
+                padding: 0;
+            }
+            .artist-name{
+                margin: 0;
+                padding: 0;
+                font-family: $secondary-font;
+                font-weight: 700;
+                color: #000000;
+                font-size: 1em;
+            }
+        }   
+    }
+}
+
+
+// osuno music section start
+.osuno-music-section{
+    a{
+        text-decoration: none;
+        .create-music-container{
+            background-image: url(../images/osuno-music-section-1.jpg);
+            text-align: center;
+            padding: 78px 20px;
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            i{ 
+                // font-family: $secondary-font;
+                // font-weight: 700;
+                font-size: 6em;
+                color: #ffffff;
+            }
+            .heading-text{
+                font-size: 2em;
+                color: #ffffff;
+                padding-top: 39px;
+                padding-bottom: 31px;
+                font-family: $secondary-font;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .create-music-text{
+                text-decoration: none;
+                text-align: center;
+                font-family: "Cardo", serif;
+                font-weight: 700;
+                font-size: 1.1em;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        .distribute-music-container{
+            background-image: url(../images/osuno-music-section-2.jpg);
+            text-align: center;
+            padding: 78px 20px;
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            i{ 
+                // font-family: $secondary-font;
+                // font-weight: 700;
+                font-size: 6em;
+                color: #ffffff;
+            }
+            .Distribute-heading-text{
+                font-size: 2em;
+                color: #ffffff;
+                padding-top: 39px;
+                padding-bottom: 31px;
+                font-family: $secondary-font;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .Distribute-music-text{
+                text-decoration: none;
+                text-align: center;
+                font-family: "Cardo", serif;
+                font-weight: 700;
+                font-size: 1.1em;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        .hardwork-music-container{
+            background-image: url(../images/osuno-music-section-3.jpg);
+            text-align: center;
+            padding: 78px 20px;
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            i{ 
+                // font-family: $secondary-font;
+                // font-weight: 700;
+                font-size: 6em;
+                color: #ffffff;
+            }
+            .hardwork-heading-text{
+                font-size: 2em;
+                color: #ffffff;
+                padding-top: 39px;
+                padding-bottom: 31px;
+                font-family: $secondary-font;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .hardwork-music-text{
+                text-decoration: none;
+                text-align: center;
+                font-family: "Cardo", serif;
+                font-weight: 700;
+                font-size: 1.1em;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
 // featured section start
 .featured-section{
     margin-top: 50px;
