@@ -1,0 +1,64 @@
+.osuno-header-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+    // margin: 50px 0;
+    .osuno-menu-bar {
+        .osuno-menu {
+            .logo-side {
+                img {
+                    margin: 0 auto;
+                    width: 50%;
+                    display: flex;
+                    @media (min-width: 768px) {
+                        width: 100%;
+                        display: initial;
+                        margin:0;
+                        padding-top: 16px;
+                        margin-left: 45px;
+                    }
+                }
+            }
+            .osuno-menu-side {
+                display: none;
+                width: 100%;
+                ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 20px;
+                    width: 90%;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 22px;
+                    li {
+                        list-style-type: none;
+                        padding: 29px 0;
+                        a {
+                            text-decoration: none;
+                            color: #fffffe;
+                            font-family: $primary-font;
+                            font-weight: 700;
+                            font-size: 1.1em;
+                            padding: 13px 7px;
+                            text-transform: uppercase;
+                            transition: all 0.3s ease-in-out;
+                            @media (min-width: 992px){
+                                font-size: 1.5em;
+                                padding: 13px 25px;
+                            }
+                            &:hover {
+                                background-color: $primary-color;
+                                box-shadow: 10px 8px 20px 9px #60606017;
+                            }
+                        }
+                    }
+                }
+                @media (min-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
