@@ -33,7 +33,10 @@
         .slide{
             // background-image: url(../images/heroimg.jpg);
             background-size: cover;
-            background-position: top center;
+            background-position: right center;
+            @media (min-width: 768px){
+                background-position: top center;
+            }
             .slide-main{
                 align-items: flex-end; 
                 height: 75vh;
@@ -52,13 +55,17 @@
                         font-family: $secondary-font;
                         font-weight: 400;
                         font-size: 4em;
-                        text-align: left;
-                        padding-left: 50px;
+                        text-align: center;
+                        padding-left: 0;
                         text-transform: uppercase;
                         letter-spacing: 15px;
                         text-shadow:-5px -1px 6px #a09f9d;
                         @media (min-width: 1200px) {
                             font-size: 8em;
+                        }
+                        @media (min-width: 768px) {
+                            text-align: left;
+                            padding-left: 50px;
                         }
                     } 
                     .osuno-hero-text{
@@ -66,10 +73,14 @@
                         font-family: $primary-font;
                         font-weight: 700;
                         font-size: 1.3em;
-                        text-align: left;
+                        text-align: center;
                         text-transform: capitalize;
                         padding-left: 50px;
                         margin-bottom: 170px;
+                        @media (min-width: 768px) {
+                            text-align: left;
+                            padding-left: 50px;
+                        }
                     }
                 }
             }      
@@ -85,15 +96,21 @@
         font-weight: 700;
         color: $primary-color;
         text-align: center;
-        font-size: 2.5em;
+        font-size: 1.5em;
+        @media (min-width: 768px) {
+            font-size: 2.5em;
+        }
     }
     .music-heading-text{
         font-family: $secondary-font;
         font-weight: 400;
         color: #000000;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1em;
         padding-bottom: 20px;
+        @media (min-width: 768px) {
+            font-size: 1.3em;
+        }
     }
     .osuno-img-container{
         .osuno-image-main{
@@ -292,18 +309,19 @@
 
 // featured section start
 .featured-section{
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
     .featured-heading{
-        text-align: right;
+        text-align: center;
         color: $primary-color;
         font-family: $secondary-font;
         font-weight: 700;
-        font-size: 1.6em;
+        font-size: 1.5em;
         text-transform: uppercase;
         padding-bottom: 20px;
         @media(min-width: 768px){
             font-size: 2.2em;
+            text-align: right;
         }
     }
     .slides{
@@ -431,56 +449,119 @@
                         color: #feecde;
                     }
                 }
-                &:hover{
-                    background: linear-gradient(135deg, rgba(232,79,45,1) 0%,rgba(251,143,10,1) 43%,rgba(251,143,10,1) 54%,rgba(251,144,9,1) 89%,rgba(251,144,9,1) 100%);
-                }
+                // &:hover{
+                //     background: linear-gradient(135deg, rgba(232,79,45,1) 0%,rgba(251,143,10,1) 43%,rgba(251,143,10,1) 54%,rgba(251,144,9,1) 89%,rgba(251,144,9,1) 100%);
+                // }
             }
         }
     }
     .studio-news-two{
-        a{
-            .studio-news-second-section{
-                .image-container{
-                    position: relative;
-                    .card-img-top{
+        .studio-news-two-image-main{
+            position: relative;
+            a{
+                img{
+                    padding-top:0;
+                    padding-bottom:0;
+                    @media (min-width: 768px){
                         padding-top: 130px;
-                    }
-                    .icon-sec{
-                        a{
-                            i{
-                                color: #f0eeeb;
-                                position:absolute;
-                                top:50%;
-                                left: 50%;
-                                transform: translate(-50%,-50%);
-                                font-size: 7.3em;
-                                opacity: 0.8;
-                            }
-                        }
-                    }
-                    .studio-news-second-text{
-                        color: #f0eeeb;
-                        position:absolute;
-                        top:50%;
-                        left: 50%;
-                        transform: translate(-50%,-50%);
-                        font-size: 1.2em;
+                        padding-bottom: 30px;
                     }
                 }
             }
+            .icon-sec{
+                a{
+                    i{
+                        color: #f0eeeb;
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-size: 6em;
+                        opacity: 0.8;
+                    }
+                }
+            } 
+            .osuno-music-text{
+                color: #f0eeeb;
+                position: absolute;
+                bottom: 8%;
+                left: 5%;
+                font-size: 1em;
+                opacity: 0.8;
+            }
         }
+        .osuno-music-text{
+            padding-top: 10px;
+            font-family: $secondary-font;
+            font-weight: 400;
+            color: #000000;
+            font-size: 1em;
+            @media (min-width: 992px){
+                font-size: 1.2em;
+            }
+        }
+    }
 
+    .studio-news-three{
+        .studio-news-three-image-main{
+            position: relative;
+            a{
+                img{
+                    margin-top: 22px;
+                    @media (min-width: 768px){
+                        margin-top: 0;
+                    }
+                }
+            }
+            .icon-sec{
+                a{
+                    i{
+                        color: #f0eeeb;
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-size: 6em;
+                        opacity: 0.8;
+                    }
+                }
+            } 
+            .osuno-music-text{
+                color: #f0eeeb;
+                position: absolute;
+                bottom: 8%;
+                left: 5%;
+                font-size: 1em;
+                opacity: 0.8;
+            }
+        }
+        .osuno-music-text{
+            padding-top: 10px;
+            font-family: $secondary-font;
+            font-weight: 400;
+            color: #000000;
+            font-size: 1em;
+            @media (min-width: 992px){
+                font-size: 1.2em;
+            }
+        }
     }
     
     .studio-news-four{
-        margin-top: 28%;
+        margin-top: 0;
+        @media (min-width: 768px){
+            margin-top: 28%; 
+        }
         .studio-news-link{
             text-decoration: none;
             .card{
                 border: none;
                 background: linear-gradient(135deg, rgba(232,79,45,1) 0%,rgba(232,79,45,1) 43%,rgba(251,143,10,1) 54%,rgba(251,144,9,1) 89%,rgba(251,144,9,1) 100%);
                 .card-img-top{
-            
+                    // margin-top: 22px;
+                    // @media (min-width: 768px){
+                    //     margin-top: 0;
+                    // }
                 }
                 .card-body{
                     .card-heading-text{
@@ -507,8 +588,58 @@
         }
     }
 
+    .studio-news-five{
+        .studio-news-five-image-main{
+            position: relative;
+            a{
+                img{
+                    // padding-top: 130px;
+                    // padding-bottom: 30px;
+                    margin-top: 22px;
+                    @media (min-width: 768px){
+                        margin-top: 0;
+                    }
+                }
+            }
+            .icon-sec{
+                a{
+                    i{
+                        color: #f0eeeb;
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-size: 6em;
+                        opacity: 0.8;
+                    }
+                }
+            } 
+            .osuno-music-text{
+                color: #f0eeeb;
+                position: absolute;
+                bottom: 8%;
+                left: 5%;
+                font-size: 1em;
+                opacity: 0.8;
+            }
+        }
+        .osuno-music-text{
+            padding-top: 10px;
+            font-family: $secondary-font;
+            font-weight: 400;
+            color: #000000;
+            font-size: 1em;
+            @media (min-width: 992px){
+                font-size: 1.2em;
+            }
+        }
+    }
+
     .studio-news-six{
-        margin-top: 28%;
+        margin-top: 0;
+        @media (min-width: 768px){
+            margin-top: 28%; 
+        }
         .studio-news-link{
             text-decoration: none;
             .card{
@@ -545,13 +676,17 @@
 
 // success-story-section
 .success-story-section{
+    margin-top: 80px;
     margin-bottom: 100px;
     .success-story-heading{
         text-align: center;
         color: $primary-color;
         font-family: $secondary-font;
         font-weight: 700;
-        font-size: 2.5em;
+        font-size: 1.5em;
+        @media (min-width: 768px){
+            font-size: 2.5em;
+        }
     }
     .success-story-heading-text{
         margin-top: 25px;
@@ -560,7 +695,10 @@
         color: #000000;
         font-family: $primary-font;
         font-weight: 400;
-        font-size: 1.2em;
+        font-size: 1em;
+        @media (min-width: 768px){
+            font-size: 1.2em;
+        }
     }
     .blog-text{
         .blog-link{
@@ -568,6 +706,10 @@
             .card{
                 transition: all ease-in-out 0.3s;
                 border: none;
+                margin-bottom: 15px;
+                @media (min-width: 768px){
+                    margin-bottom: 0;
+                }
                 .card-img-top{
 
                 }
